@@ -5,7 +5,7 @@ class Home extends React.Component{
     render(){
     
     return(
-        <body className="App-body">
+          <div>
         <div className="Form-container">
         </div>
         <br/>
@@ -19,7 +19,7 @@ class Home extends React.Component{
             <i class="fas fa-bars"></i>
           </button>
         </div>
-        </body>
+          </div>
     );
     
     }
