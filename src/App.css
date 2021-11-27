@@ -18,7 +18,7 @@ body{
 }
 
 .App-header {
-  background-color: #82df82;
+  background-color: #912338;
   min-height: 10vh;
   display: flex;
   flex-direction: row;
@@ -41,7 +41,7 @@ body{
 }
 
 .App-footer {
-  background-color: #82df82;
+  background-color: #912338;
   min-height: 8vh;
   display: flex;
   flex-direction: row;
@@ -67,7 +67,7 @@ body{
 }
 
 .Form-container{
-  background-color: #82df82;
+  background-color: #912338;
   height: 40vh;
   width: 100vh;
   display: flex;
@@ -80,11 +80,11 @@ body{
 
 .title{
   font-size: 5vh;
-  color: #67866c;
+  color: #ffffff;
 }
 
 .buttons{
-  background-color: #67866c;
+  background-color: #5e1724;
   border: 0px;
   color: white;
   padding: 10px;
