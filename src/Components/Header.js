@@ -15,7 +15,7 @@ class Header extends React.Component{
               </button>
             </div>
               <div className="title">
-                Class Tracker
+                  Class Tracker
               </div>
             <div className="mRight">
                 Stacy Doyle
