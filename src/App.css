@@ -66,16 +66,31 @@ body{
   }
 }
 
-.Form-container{
+.formDivider{
   background-color: #912338;
   height: 40vh;
   width: 100vh;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   margin: 10px;
   box-shadow: 5px 5px #ececd8;
   border-radius: 4px;
+  justify-content:space-evenly;
+  flex-direction: column;
+
+}
+
+.orderForms{
+}
+
+.Form-container{
+  
+  
+}
+
+.Form-container-checkbox{
+  font-size: large;
+  color: white;
+  
 }
 
 
@@ -119,4 +134,22 @@ body{
   width: 80px;
   height: 80px;
   border-radius: 5px;
+}
+
+.formField{
+  justify-content: center;
+}
+
+.inputStyle{
+  border: 0px;
+  border-radius: 4px;
+}
+
+.inputStyle:hover{
+  background-color: rgb(233, 233, 176);
+}
+
+.inputStyleLabel{
+  font-size: small;
+  color: white;
 }
