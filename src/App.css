@@ -75,6 +75,7 @@ body{
   flex-direction: column;
   margin: 10px;
   box-shadow: 5px 5px #ececd8;
+  border-radius: 4px;
 }
 
 
@@ -91,10 +92,30 @@ body{
   border-radius: 4px;
 }
 
+.buttonMenu{
+  background-color: #5e1724;
+  border: 0px;
+  color: #912338;
+  padding: 0;
+  padding-top: 10px;
+  border-radius: 4px;
+  height: 60px;
+  width: 60px;
+  font-size:xx-large;
+}
+
 .mLeft{
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .mRight{
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+.ProfilePic{
+  margin-left: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
 }

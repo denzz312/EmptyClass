@@ -1,4 +1,6 @@
 import React from "react";
+import ProfilePic from "./generic_student.png";
+import { FaBars } from "react-icons/fa";
 
 class Header extends React.Component{
  
@@ -6,17 +8,22 @@ class Header extends React.Component{
     
     return(
         
-            <header className="App-header">
+          <header className="App-header">
             <div className="mLeft">
-              <button className="buttons">
+              <button className="buttonMenu">
+                <FaBars/>
               </button>
             </div>
               <div className="title">
                 Class Tracker
               </div>
             <div className="mRight">
-              <button className="buttons">click here</button>
-        
+                Stacy Doyle
+                <img
+                  src= {ProfilePic}
+                  onClick={this.deletePost}
+                  className = "ProfilePic"
+                />
             </div>
           </header>
         
