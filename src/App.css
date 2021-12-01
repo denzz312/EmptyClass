@@ -168,3 +168,16 @@ body {
     border-collapse: collapse;
 }
 
+
+
+table{
+  border-collapse: collapse;
+  border: 1px solid black;
+  table-layout: auto;
+  width: 300%;
+  background-color: #912338;
+}
+
+tr, th {
+  border: 1px solid black;
+}
