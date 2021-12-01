@@ -1,13 +1,21 @@
 import React from "react";
 
 class FinishBooking extends React.Component{
- 
+
+    constructor(props) {
+        super();
+        console.log(props.joinObj);
+        this.state = {
+            ...props.joinObj
+        }
+    }
     render(){
     
     return(
         <div>
-            css for any component goes into 'App.css'
-            This is where you put the html/forms
+            {this.state.subject}
+            {this.state.room}
+            {this.state.note}
         </div>
         
     );

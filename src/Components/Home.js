@@ -1,7 +1,9 @@
 import React from "react";
 import { FaUsers, FaSearch } from "react-icons/fa";
+import JoinOthers from "./JoinOthers";
 
 class Home extends React.Component{
+
  
     handleJoin(){
       console.log('clicked');

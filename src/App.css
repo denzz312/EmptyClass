@@ -1,155 +1,170 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-body{
-  margin: 0px;
+body {
+    margin: 0px;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #912338;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: row;
-  font-size: calc(10px + 2vmin);
-  color: black;
-  margin: 0px;
-  align-items: center;
-  justify-content:space-between;
+    background-color: #912338;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    margin: 0px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .App-body {
-  background-color: #ffffec;
-  min-height: 82vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  margin: 0px;
+    background-color: #ffffec;
+    min-height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin: 0px;
 }
 
 .App-footer {
-  background-color: #912338;
-  min-height: 8vh;
-  display: flex;
-  flex-direction: row;
-  align-items:flex-start;
-  justify-content:flex-start;
-  font-size: 20px;
-  color: rgb(255, 255, 255);
-  margin: 0px;
-  padding-left: 10px;
+    background-color: #912338;
+    min-height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding-left: 10px;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-.formDivider{
-  background-color: #912338;
-  height: 40vh;
-  width: 100vh;
-  display: flex;
-  margin: 10px;
-  box-shadow: 5px 5px #ececd8;
-  border-radius: 4px;
-  justify-content:space-evenly;
-  flex-direction: column;
+.formDivider {
+    background-color: #912338;
+    height: 40vh;
+    width: 100vh;
+    display: flex;
+    margin: 10px;
+    box-shadow: 5px 5px #ececd8;
+    border-radius: 4px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    overflow: scroll;
+    flex-flow: column;
 
 }
 
-.orderForms{
+.orderForms {
 }
 
-.Form-container{
-  
-  
-}
-
-.Form-container-checkbox{
-  font-size: large;
-  color: white;
-  
-}
+.Form-container {
 
 
-.title{
-  font-size: 5vh;
-  color: #ffffff;
-  padding-left: 150px;
 }
 
-.buttons{
-  background-color: #5e1724;
-  border: 0px;
-  color: white;
-  padding: 10px;
-  border-radius: 4px;
+.Form-container-checkbox {
+    font-size: large;
+    color: white;
+
 }
 
-.buttonMenu{
-  background-color: #5e1724;
-  border: 0px;
-  color: #912338;
-  padding: 0;
-  padding-top: 10px;
-  border-radius: 4px;
-  height: 60px;
-  width: 60px;
-  font-size:xx-large;
+
+.title {
+    font-size: 5vh;
+    color: #ffffff;
+    padding-left: 150px;
 }
 
-.mLeft{
-  margin-left: 20px;
-  margin-right: 20px;
+.buttons {
+    background-color: #5e1724;
+    border: 0px;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
 }
 
-.mRight{
-  margin-right: 10px;
+.buttonMenu {
+    background-color: #5e1724;
+    border: 0px;
+    color: #912338;
+    padding: 0;
+    padding-top: 10px;
+    border-radius: 4px;
+    height: 60px;
+    width: 60px;
+    font-size: xx-large;
 }
 
-.ProfilePic{
-  margin-left: 10px;
-  width: 80px;
-  height: 80px;
-  border-radius: 5px;
+.mLeft {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.formField{
-  justify-content: center;
+.mRight {
+    margin-right: 10px;
 }
 
-.inputStyle{
-  border: 0px;
-  border-radius: 4px;
+.ProfilePic {
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
 }
 
-.inputStyle:hover{
-  background-color: rgb(233, 233, 176);
+.formField {
+    justify-content: center;
 }
 
-.inputStyleLabel{
-  font-size: small;
-  color: white;
+.inputStyle {
+    border: 0px;
+    border-radius: 4px;
 }
+
+.inputStyle:hover {
+    background-color: rgb(233, 233, 176);
+}
+
+.inputStyleLabel {
+    font-size: small;
+    color: white;
+}
+
+.joinOther .table{
+    margin-top: 150px;
+    padding: 100px;
+    color: white;
+}
+
+.joinOther .table, .joinOther .table tr, .joinOther .table th , .joinOther .table td{
+    border: 1px solid white;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
