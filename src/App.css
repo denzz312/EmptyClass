@@ -207,18 +207,43 @@ body {
     background-color: #912338;
     height: 500px;
     width: 500px;
-    font-size: 200%;
+    
+}
+
+.Details p{
+    color: white;
+    font-size: 125%;
+    margin-left: 10px;
     text-align: left;
 }
 
-.sessionTextBox{
+.sessionDetailsInfo{
+    margin-left: 250px;
+    background-color: #912338;
+    height: 500px;
+    width: 500px;
+}
+
+.sessionDetailsInfo textarea{
+    resize: none;
+    font-size: large;
+}
+
+.sessionCheckBox{
+    font-size: 250%;
     margin-top: 20%;
     text-align: center;
 }
 
-.sessionDetailsInfo{
-    margin-left: 15%;
-    background-color: #912338;
-    height: 500px;
-    width: 500px;
+.sessionTextBox{
+    text-align: left;
+    margin-top: 10%;
+}
+
+.identityRoom{
+    margin-left: 30%;
+}
+
+.descriptionText{
+    margin-left: 10%;
 }

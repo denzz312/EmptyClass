@@ -1,8 +1,11 @@
 import { react } from "@babel/types";
-import React from "react";
-import { Container, Row, Col } from 'react-bootstrap'
+import React, {Component} from "react";
 
 class SessionDetails extends React.Component {
+
+    handleChange(event){
+        console.log(event.target.value)
+    }
 
     render() {
 
@@ -11,7 +14,7 @@ class SessionDetails extends React.Component {
                 <div className="Details">
                     <div className="sessionDetailsPreferences">
                         <p>Preferences</p>
-                        <div className="sessionTextBox">
+                        <div className="sessionCheckBox">
                             <div>
                                 <input type="checkbox"
                                     name="studyType"
@@ -20,6 +23,7 @@ class SessionDetails extends React.Component {
                                      Study Alone
                                 </label>
                             </div>
+                            <br></br>
                             <div>
                                 <input type="checkbox"
                                     name="studyType"
@@ -32,7 +36,21 @@ class SessionDetails extends React.Component {
 
                     </div>
                     <div className="sessionDetailsInfo">
-
+                        <p>Identity Room & Notice</p>
+                        <div className = "sessionTextBox">
+                            <div className = "identityRoom">
+                                <textarea
+                                    name = "identityRoom"
+                                    style = {{width: "55%", height: "20px"}}
+                                    onChange = {this.handleChange}/>
+                            </div>
+                            <br></br>
+                            <div className = "descriptionText">
+                                <textarea 
+                                    name = "description"
+                                    style = {{width: "87%", height: "300px"} }/>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <br></br>
