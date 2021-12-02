@@ -168,16 +168,30 @@ body {
     border-collapse: collapse;
 }
 
+.searchResults{
 
-
-table{
-  border-collapse: collapse;
-  border: 1px solid black;
-  table-layout: auto;
-  width: 300%;
-  background-color: #912338;
 }
 
-tr, th {
-  border: 1px solid black;
+.searchResultsTable{
+    height: 60vh;
+    width: 150vh;
+    display: flex;
+    margin: 10px;
+    border-radius: 4px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-flow: column;
+    overflow: scroll;
+}
+
+.searchResults .table{
+    padding: 100px;
+    color: black;
+    background-color: #912338;
+}
+
+.searchResults .table, .searchResults .table tr, .searchResults .table th, .searchResults .table td{
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
 }

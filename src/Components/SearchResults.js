@@ -6,10 +6,38 @@ class SearchResults extends React.Component {
         console.log('clicked');
     }
 
-    render() {
 
+    render() {
+        let data = [{
+            "room": "2.125",
+            "Building": "JSMB Building"
+        }, {
+            "room": "2.125",
+            "Building": "JSMB Building"
+        },{
+            "room": "2.125",
+            "Building": "JSMB Building"
+        },{
+            "room": "2.125",
+            "Building": "JSMB Building"
+        },{
+            "room": "2.125",
+            "Building": "JSMB Building"
+        },{
+            "room": "2.125",
+            "Building": "JSMB Building"
+        },{
+            "room": "2.125",
+            "Building": "JSMB Building"
+        },{
+            "room": "2.125",
+            "Building": "JSMB Building"
+        },{
+            "room": "2.125",
+            "Building": "JSMB Building"
+        }];
         return (
-            <div>
+            <div className = "searchResults">
                 <div>
                     Available Spaces
                     <input
@@ -19,8 +47,8 @@ class SearchResults extends React.Component {
                         name="s"
                     />
                 </div>
-                <div>
-                    <table>
+                <div className = "searchResultsTable">
+                    <table className = "table">
                         <thead>
                             <tr>
                                 <th>Room #</th>
@@ -29,18 +57,25 @@ class SearchResults extends React.Component {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th>2.125</th>
-                                <th>JMSB Building</th>
-                                <th>
-                                    <button>Select Room</button>
-                                </th>
-                            </tr>
+                        {
+                            data.map((item, index) => {
+                                return(
+                                    <tr key = {index}>
+                                        <td>{item.room}</td>
+                                        <td>{item.Building}</td>
+                                        <td>
+                                            <button className = "buttons">Select Room</button>
+                                        </td>
+                                    </tr>
+                                )
+                            })
+                        }
+                            
                         </tbody>
                     </table>
                 </div>
                 <div>
-                    <button className="ReturnButton"
+                    <button className="buttons"
                         onClick={this.handleJoin}>
                         Return
                     </button>
