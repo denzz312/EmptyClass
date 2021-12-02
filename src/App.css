@@ -168,16 +168,94 @@ body {
     border-collapse: collapse;
 }
 
-
-
-table{
-  border-collapse: collapse;
-  border: 1px solid black;
-  table-layout: auto;
-  width: 300%;
-  background-color: #912338;
+.searchResults .information{
+    display: flex;
+    flex-direction: row;
+    margin-left: 7.5%;
 }
 
-tr, th {
-  border: 1px solid black;
+.tableSearch{
+    margin-top: 15px;
+    margin-left: 65%;
+}
+
+.searchResultsTable{
+    height: 60vh;
+    width: 150vh;
+    display: flex;
+    margin: 10px;
+    border-radius: 4px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-flow: column;
+    overflow:scroll;
+}
+
+.searchResults .table{
+    padding: 100px;
+    color: black;
+    background-color: #912338;
+}
+
+.searchResults .table, .searchResults .table tr, .searchResults .table th, .searchResults .table td{
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+.searchResults .table tbody{
+    color: white;
+    overflow: auto;
+}
+
+.Details{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 1250px;
+}
+
+.sessionDetailsPreferences{
+    background-color: #912338;
+    height: 500px;
+    width: 500px;
+    
+}
+
+.Details p{
+    color: white;
+    font-size: 125%;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.sessionDetailsInfo{
+    margin-left: 250px;
+    background-color: #912338;
+    height: 500px;
+    width: 500px;
+}
+
+.sessionDetailsInfo textarea{
+    resize: none;
+    font-size: large;
+}
+
+.sessionCheckBox{
+    font-size: 250%;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.sessionTextBox{
+    text-align: left;
+    margin-top: 10%;
+}
+
+.identityRoom{
+    margin-left: 30%;
+}
+
+.descriptionText{
+    margin-left: 10%;
 }
