@@ -38,14 +38,20 @@ class SearchResults extends React.Component {
         }];
         return (
             <div className = "searchResults">
-                <div>
-                    Available Spaces
-                    <input
-                        type="text"
-                        id="header-search"
-                        placeholder="Search"
-                        name="s"
-                    />
+                <div className = "information">
+                    <div>
+                        <p>Available Spaces</p>
+                    </div>
+                    <div className = "tableSearch">
+                        <input
+                            type="search"
+                            id="header-search"
+                            placeholder="Search"
+                            name="searchRoom"
+                            style= {{width: "125%"}}
+                        />
+                    </div>
+                    
                 </div>
                 <div className = "searchResultsTable">
                     <table className = "table">

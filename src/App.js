@@ -17,7 +17,7 @@ class App extends React.Component {
       <div className="App">
         <Header/>
         <body className="App-body">
-        <SessionDetails/>
+        <SearchResults/>
         </body>
         <Footer/>
       </div>
