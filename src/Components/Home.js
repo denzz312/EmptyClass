@@ -121,8 +121,7 @@ class Home extends React.Component{
     }
 
     handleJoin = (e) =>{
-      e.preventDefault();
-      console.log(this.state);
+      
     }
 
     render(){
@@ -225,42 +224,13 @@ class Home extends React.Component{
           <div>
             <button
               className="buttons"
-              onClick={this.handleSearch}
+              onClick={this.handleJoin}
               >
               Join Others
               &nbsp;
               <FaUsers/>
             </button>
           </div>
-          {/* <div>
-            {Data.map(post => {
-
-                const test = post.H["920"]["monday"][0];
-                // test = purpose.replace(/./g,"");
-                let start = test[0].split(".");
-                let end = test[1].split(".");
-                let app = post;
-                let apple = console.log(app);
-                let newData = []
-
-                Object.keys(app).forEach(function(key){
-                  newData.push(app[key]);
-                });
-
-                let array = console.log(newData)
-
-               return(
-                <>
-                
-               <h3>Start</h3><h2>{start}</h2>
-               <h3>End</h3><h2>{end}</h2>
-               <h2>{array}</h2>
-
-                </>
-             )}
-             )
-            }
-          </div> */}
           </div>
     );
     
