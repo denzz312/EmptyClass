@@ -35,22 +35,8 @@ class Home extends React.Component{
     
     handleSearch = (e) =>{
       e.preventDefault();
-      //checks that we get data from inputs
-      //console.log(this.state);
       
       {Data.map(post => {
-        //how I will parse dates
-       //const test = post.H["920"]["monday"][0];
-       //let start = test[0];
-       //start = start.replace('.00','');
-       //start = start.replace('.','');
-       //if(start.charAt(0) == '0'){
-       //  console.log(start.charAt(0));
-       //}
-
-       //let end = test[1];
-       //end = end.replace('.00','');
-       //console.log(end.replace('.',''));
 
         let classList = post.H;
         let searchList = [];
@@ -60,14 +46,12 @@ class Home extends React.Component{
         if(sTime.charAt(0) == '0'){
            sTime = sTime.slice(1);
         }
-        //console.log(sTime);
         
         this.state.endTime = this.state.endTime.replace(":",'');
         let eTime = this.state.endTime;
         if(eTime.charAt(0) == '0'){
           eTime = eTime.slice(1);
         }
-        //console.log(eTime);
 
         //this should be the loop to finish this
         for(var i = 0; i < 1271; i++){
