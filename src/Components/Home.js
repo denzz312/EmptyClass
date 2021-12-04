@@ -1,4 +1,5 @@
 import React from "react";
+import { Next } from "react-bootstrap/esm/PageItem";
 import { FaUsers, FaSearch } from "react-icons/fa";
 import Data from "./compieddata.json";
 
@@ -57,38 +58,50 @@ class Home extends React.Component{
         for(var i = 0; i < 1271; i++){
           if(classList[i] != null){
             console.log(i);
-           for(var j = 0; j < 10; j++){
-            //this should allow only days that have free time be be added into list
-            if((classList[i][this.state.day][j] != null) ||
-            (classList[i][this.state.day][j] != undefined)){
-              
-              //adjust value of schedule start to be calculated
-              let scStart = classList[i][this.state.day][j][0].replace(".00","");
-              scStart = scStart.replace(".","");
-              if(scStart.charAt(0) == '0'){
-                scStart = scStart.slice(1);
+
+            if(classList[i][this.state.day] == null){
+              console.log("bing bong, fuck ya life");
+            }else{
+
+              for(var j = 0; j < 10; j++){
+               //this should allow only days that have free time be be added into list
+               if((classList[i][this.state.day][j] != null) &&
+               (classList[i][this.state.day][j] != undefined)){
+                 
+                 //adjust value of schedule start to be calculated
+                 let scStart = classList[i][this.state.day][j][0].replace(".00","");
+                 scStart = scStart.replace(".","");
+                 if(scStart.charAt(0) == '0'){
+                   scStart = scStart.slice(1);
+                 }
+   
+                 //adjust value of schedule end to be calculated
+                 let scEnd = classList[i][this.state.day][j][1].replace(".00","");
+                 scEnd = scEnd.replace(".","");
+                 if(scEnd.charAt(0) == '0'){
+                   scEnd = scEnd.slice(1);
+                 }
+   
+                 //add room number to list to pass to SearchResults
+                 if(parseInt(sTime) >= parseInt(scStart) &&
+                    parseInt(eTime) <= parseInt(scEnd)){
+                      console.log("works")
+                    console.log(scStart);
+                    console.log(scEnd);
+                    searchList.push(i);
+                    console.log(searchList);
+                   }
+               }
               }
 
-              //adjust value of schedule end to be calculated
-              let scEnd = classList[i][this.state.day][j][1].replace(".00","");
-              scEnd = scEnd.replace(".","");
-              if(scEnd.charAt(0) == '0'){
-                scEnd = scEnd.slice(1);
-              }
-
-              //add room number to list to pass to SearchResults
-              if(parseInt(sTime) >= parseInt(scStart) &&
-                 parseInt(eTime) <= parseInt(scEnd)){
-                   console.log("works")
-                 console.log(scStart);
-                 console.log(scEnd);
-                 searchList.push(i);
-                 console.log(searchList);
-                }
             }
-           }
+           
           }
         }
+
+        this.state.searchData = searchList;
+        let something = this.state.searchData;
+        console.log(something);
 
        return(
         <>
