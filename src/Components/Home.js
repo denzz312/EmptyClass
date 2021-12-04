@@ -60,7 +60,7 @@ class Home extends React.Component{
             console.log(i);
 
             if(classList[i][this.state.day] == null){
-              console.log("bing bong, fuck ya life");
+              
             }else{
 
               for(var j = 0; j < 10; j++){
@@ -86,10 +86,7 @@ class Home extends React.Component{
                  if(parseInt(sTime) >= parseInt(scStart) &&
                     parseInt(eTime) <= parseInt(scEnd)){
                       console.log("works")
-                    console.log(scStart);
-                    console.log(scEnd);
                     searchList.push(i);
-                    console.log(searchList);
                    }
                }
               }
@@ -105,11 +102,6 @@ class Home extends React.Component{
 
        return(
         <>
-{/*         
-       <h3>Start</h3><h2>{start}</h2>
-       <h3>End</h3><h2>{end}</h2>
-       <h2>{array}</h2> */}
-
         </>
      )}
      )
