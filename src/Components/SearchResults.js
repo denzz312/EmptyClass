@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 class SearchResults extends React.Component {
 
@@ -70,21 +71,27 @@ class SearchResults extends React.Component {
                                         <td>{item.room}</td>
                                         <td>{item.Building}</td>
                                         <td>
-                                            <button className = "buttons">Select Room</button>
+                                            <Link to="/session">
+                                                <button className="buttons">Select Room</button>
+                                            </Link>
+
                                         </td>
                                     </tr>
                                 )
                             })
                         }
-                            
+
                         </tbody>
                     </table>
                 </div>
                 <div>
-                    <button className="buttons"
-                        onClick={this.handleJoin}>
-                        Return
-                    </button>
+                    <Link to="/">
+                        <button className="buttons"
+                                onClick={this.handleJoin}>
+                            Return
+                        </button>
+                    </Link>
+
                 </div>
             </div>
 

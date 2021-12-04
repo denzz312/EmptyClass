@@ -85,6 +85,8 @@ class JoinOthers extends React.Component {
                                                         </button>
                                                     </td>
                                                 </tr>
+
+                                                
                                             )
                                         })
                                     }

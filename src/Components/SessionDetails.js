@@ -1,5 +1,6 @@
 import { react } from "@babel/types";
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
 
 class SessionDetails extends React.Component {
 
@@ -56,11 +57,16 @@ class SessionDetails extends React.Component {
                 <br></br>
                 <div className="buttonPlace">
                     <div>
-                        <button className="buttons">Finish</button>
+                        <Link to="/finish">
+                            <button className="buttons">Finish</button>
+                        </Link>
                     </div>
                     <br></br>
                     <div>
-                        <button className="buttons">Return</button>
+                        <Link to="/search">
+
+                            <button className="buttons">Return</button>
+                        </Link>
                     </div>
                 </div>
             </div>
