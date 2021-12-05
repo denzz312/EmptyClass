@@ -14,6 +14,7 @@ class JoinOthers extends React.Component {
 
 
 
+
     render() {
 
         let data = [{
@@ -114,5 +115,6 @@ class JoinOthers extends React.Component {
         })
     }
 }
+
 
 export default JoinOthers

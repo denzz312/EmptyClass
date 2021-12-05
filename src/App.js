@@ -9,20 +9,28 @@ import Home from './Components/Home';
 import SearchResults from './Components/SearchResults';
 import SessionDetails from './Components/SessionDetails';
 import JoinOthers from "./Components/JoinOthers";
+import {BrowserRouter as Router, Routes} from "react-router-dom";
 
 class App extends React.Component {
     render() {
 
-    return (
-      <div className="App">
-        <Header/>
-        <body className="App-body">
-        <SearchResults/>
-        </body>
-        <Footer/>
-      </div>
-    );
-  }
+        return (
+            <Router>
+                <div className="App">
+                    <Header/>
+                    <body className="App-body">
+                    <Home/>
+                    <Routes>
+                        <Route path={"/"}></Route>
+                    </Routes>
+                    </body>
+                    <Footer/>
+                </div>
+            </Router>
+
+        );
+    }
 }
+
 
 export default App;
