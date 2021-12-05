@@ -81,14 +81,6 @@ body {
 
 }
 
-.orderForms {
-}
-
-.Form-container {
-
-
-}
-
 .Form-container-checkbox {
     font-size: large;
     color: white;
@@ -259,3 +251,28 @@ body {
 .descriptionText{
     margin-left: 10%;
 }
+
+.FinishJoin p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.FinishBooking p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.confirmationList{
+    background-color: #912338;
+    color: white;
+    height: 40vh;
+    width: 75vh;
+    display: flex;
+    border-radius: 16px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-flow: column;
+    font-size: 20px;
+}
+
+
