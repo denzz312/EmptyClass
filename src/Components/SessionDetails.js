@@ -4,8 +4,32 @@ import {Link} from "react-router-dom";
 
 class SessionDetails extends React.Component {
 
-    handleChange(event){
-        console.log(event.target.value)
+    finish(){
+        this.props.history.push({
+            pathname: "/finish",
+            state:{
+                ...this.state,
+                ...this.props.location.state
+            }
+
+        })
+    }
+
+    constructor(props) {
+
+        super();
+        if(!props.location.state){
+
+            props.history.push("/");
+            return;
+        }
+        this.state = {
+            ...props.location.state,
+            title: "",
+            note:""
+
+        }
+        console.log(this.state)
     }
 
     render() {
@@ -20,7 +44,7 @@ class SessionDetails extends React.Component {
                                 <input type="checkbox"
                                     name="studyType"
                                     value="alone"/>
-                                <label for="alone">
+                                <label htmlFor="alone">
                                      Study Alone
                                 </label>
                             </div>
@@ -29,7 +53,7 @@ class SessionDetails extends React.Component {
                                 <input type="checkbox"
                                     name="studyType"
                                     value="group" />
-                                <label for="group">
+                                <label htmlFor="group">
                                     Allow Join
                                 </label>
                             </div>
@@ -43,13 +67,24 @@ class SessionDetails extends React.Component {
                                 <textarea
                                     name = "identityRoom"
                                     style = {{width: "55%", height: "20px"}}
-                                    onChange = {this.handleChange}/>
+                                    defaultValue={this.state.title}
+                                    onChange = {(e)=>{
+                                        this.setState({
+                                            title: e.target.value
+                                        })
+                                    }}/>
                             </div>
                             <br></br>
                             <div className = "descriptionText">
                                 <textarea 
                                     name = "description"
-                                    style = {{width: "87%", height: "300px"} }/>
+                                    style = {{width: "87%", height: "300px"} }
+                                    defaultValue={this.state.note}
+                                    onChange = {(e)=>{
+                                        this.setState({
+                                            note: e.target.value
+                                        })
+                                    }}/>
                             </div>
                         </div>
                     </div>
@@ -57,9 +92,11 @@ class SessionDetails extends React.Component {
                 <br></br>
                 <div className="buttonPlace">
                     <div>
-                        <Link to="/finish">
-                            <button className="buttons">Finish</button>
-                        </Link>
+
+                            <button className="buttons" onClick={
+                                this.finish.bind(this)
+                            }>Finish</button>
+
                     </div>
                     <br></br>
                     <div>

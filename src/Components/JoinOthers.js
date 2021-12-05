@@ -1,5 +1,6 @@
 import React from "react";
-import FinishBooking from "./FinishBooking";
+import FinishJoin from "./FinishJoin";
+import {Link} from "react-router-dom";
 
 class JoinOthers extends React.Component {
 
@@ -8,10 +9,9 @@ class JoinOthers extends React.Component {
         super(props);
         this.state = {
             showJoinNow: false,
-            joinObj :{}
+            joinObj: {}
         }
     }
-
 
 
     render() {
@@ -58,47 +58,57 @@ class JoinOthers extends React.Component {
                 {(() => {
                     if (!this.state.showJoinNow) {
                         return (
-                            <div className="formDivider">
-                                <table className="table">
-                                    <thead>
-                                    <tr>
-                                        <th> 123</th>
-                                        <th> 123</th>
-                                        <th> 123</th>
-                                        <th> 123</th>
-                                    </tr>
-                                    </thead>
+                            <div>
+                                <div className="formDivider">
+                                    <table className="table">
+                                        <thead>
+                                        <tr>
+                                            <th> 123</th>
+                                            <th> 123</th>
+                                            <th> 123</th>
+                                            <th> 123</th>
+                                        </tr>
+                                        </thead>
 
-                                    <tbody>
-                                    {
-                                        data.map((item, index) => {
+                                        <tbody>
+                                        {
+                                            data.map((item, index) => {
 
-                                            return (
-                                                <tr key={index}>
-                                                    <td>{item.subject}</td>
-                                                    <td>{item.room}</td>
-                                                    <td>{item.note}</td>
-                                                    <td>
-                                                        <button className="buttons" onClick={() => {
-                                                            this.joinNow(item)
-                                                        }}>Join Now
-                                                        </button>
-                                                    </td>
-                                                </tr>
-
-                                                
-                                            )
-                                        })
-                                    }
-                                    </tbody>
+                                                return (
+                                                    <tr key={index}>
+                                                        <td>{item.subject}</td>
+                                                        <td>{item.room}</td>
+                                                        <td>{item.note}</td>
+                                                        <td>
+                                                            <button className="buttons" onClick={() => {
+                                                                this.joinNow(item)
+                                                            }}>Join Now
+                                                            </button>
+                                                        </td>
+                                                    </tr>
 
 
-                                </table>
+                                                )
+                                            })
+                                        }
+                                        </tbody>
 
+
+                                    </table>
+
+
+                                </div>
+                                <div><Link to="/">
+                                    <button className="buttons"
+                                            onClick={this.handleJoin}>
+                                        Return
+                                    </button>
+                                </Link></div>
                             </div>
+
                         )
-                    }else{
-                        return <FinishBooking joinObj={this.state.joinObj}></FinishBooking>
+                    } else {
+                        return <FinishJoin joinObj={this.state.joinObj}></FinishJoin>
                     }
                 })()
                 }
@@ -112,7 +122,7 @@ class JoinOthers extends React.Component {
         console.log(obj)
         this.setState({
             showJoinNow: true,
-            joinObj : obj
+            joinObj: obj
         })
     }
 }

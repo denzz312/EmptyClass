@@ -5,7 +5,7 @@ import React from "react";
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Home from './Components/Home';
-import {BrowserRouter, Route,Routes,Link} from "react-router-dom";
+import {BrowserRouter, Route,  Switch} from "react-router-dom";
 import JoinOthers from "./Components/JoinOthers";
 import SearchResults from "./Components/SearchResults";
 import FinishBooking from "./Components/FinishBooking";
@@ -17,20 +17,20 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header/>
-        <body className="App-body">
+        <div className="App-body">
         <BrowserRouter>
 
 
-            <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/join" element={<JoinOthers/>}/>
-                <Route path="/search" element={<SearchResults/>}/>
-                <Route path="/session" element={<SessionDetails/>}/>
-                <Route path="/finish" element={<FinishBooking/>}/>
-                
-            </Routes>
+            <Switch>
+                <Route exact={true} path="/" component={Home}/>
+                <Route path="/join" component={JoinOthers}/>
+                <Route path="/search" component={SearchResults}/>
+                <Route path="/session" component={SessionDetails}/>
+                <Route path="/finish" component={FinishBooking}/>
+
+            </Switch>
         </BrowserRouter>
-        </body>
+        </div>
           
         <Footer/>
       </div>
