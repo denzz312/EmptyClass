@@ -65,7 +65,7 @@ class SessionDetails extends React.Component {
                         <div className = "sessionTextBox">
                             <div className = "identityRoom">
                                 <textarea
-                                    name = "identityRoom"
+                                    name = "subject"
                                     style = {{width: "55%", height: "20px"}}
                                     defaultValue={this.state.title}
                                     onChange = {(e)=>{
@@ -77,7 +77,7 @@ class SessionDetails extends React.Component {
                             <br></br>
                             <div className = "descriptionText">
                                 <textarea 
-                                    name = "description"
+                                    name = "note"
                                     style = {{width: "87%", height: "300px"} }
                                     defaultValue={this.state.note}
                                     onChange = {(e)=>{
@@ -101,7 +101,6 @@ class SessionDetails extends React.Component {
                     <br></br>
                     <div>
                         <Link to="/search">
-
                             <button className="buttons">Return</button>
                         </Link>
                     </div>
