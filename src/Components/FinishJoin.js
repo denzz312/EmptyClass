@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCalendarCheck } from "react-icons/fa";
+import {Link} from "react-router-dom";
 
 export default class FinishJoin extends React.Component {
     constructor(props) {
@@ -35,6 +36,15 @@ export default class FinishJoin extends React.Component {
                         {this.state.note}
                     </div>
                 </div>
+                <br/>
+                <div>
+                    <Link to="/">
+                        <button className="buttons">
+                            Return to HomePage
+                        </button>
+                    </Link>
+                </div>
+                <br/>
             </div>
 
         );

@@ -40,22 +40,22 @@ class SessionDetails extends React.Component {
                     <div className="sessionDetailsPreferences">
                         <p>Preferences</p>
                         <div className="sessionCheckBox">
-                            <div>
+                            <div className="descriptionPref">
+                                <label >
+                                     Study Alone &nbsp;
+                                </label>
                                 <input type="checkbox"
                                     name="studyType"
                                     value="alone"/>
-                                <label htmlFor="alone">
-                                     Study Alone
-                                </label>
                             </div>
                             <br></br>
-                            <div>
+                            <div className="descriptionPref">
+                                <label>
+                                    Allow Join &nbsp;
+                                </label>
                                 <input type="checkbox"
                                     name="studyType"
                                     value="group" />
-                                <label htmlFor="group">
-                                    Allow Join
-                                </label>
                             </div>
                         </div>
 
@@ -64,6 +64,11 @@ class SessionDetails extends React.Component {
                         <p>Identity Room & Notice</p>
                         <div className = "sessionTextBox">
                             <div className = "identityRoom">
+                                <div>
+                                <label>
+                                    Course Name/Code
+                                </label>
+                                </div>
                                 <textarea
                                     name = "subject"
                                     style = {{width: "55%", height: "20px"}}
@@ -76,6 +81,11 @@ class SessionDetails extends React.Component {
                             </div>
                             <br></br>
                             <div className = "descriptionText">
+                                <div>
+                                <label>
+                                    Note
+                                </label>
+                                </div>
                                 <textarea 
                                     name = "note"
                                     style = {{width: "87%", height: "300px"} }

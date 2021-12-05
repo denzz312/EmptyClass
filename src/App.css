@@ -184,9 +184,17 @@ body {
     margin-left: 65%;
 }
 
+.titleSpaces{
+    margin-top: 15px;
+}
+
+.arrangeTableLeft{
+    text-align: left;
+}
+
 .searchResultsTable{
     height: 60vh;
-    width: 150vh;
+    width: 100vh;
     display: flex;
     margin: 10px;
     border-radius: 4px;
@@ -197,7 +205,6 @@ body {
 }
 
 .searchResults .table{
-    padding: 100px;
     color: black;
     background-color: #912338;
 }
@@ -222,9 +229,10 @@ body {
 
 .sessionDetailsPreferences{
     background-color: #912338;
-    height: 500px;
+    height: 350px;
     width: 500px;
-    
+    box-shadow: 5px 5px #ececd8;
+    border-radius: 4px;
 }
 
 .Details p{
@@ -239,11 +247,14 @@ body {
     background-color: #912338;
     height: 500px;
     width: 500px;
+    box-shadow: 5px 5px #ececd8;
+    border-radius: 4px;
 }
 
 .sessionDetailsInfo textarea{
     resize: none;
     font-size: large;
+    border-radius: 4px;
 }
 
 .sessionCheckBox{
@@ -259,10 +270,19 @@ body {
 
 .identityRoom{
     margin-left: 30%;
+    font-size: small;
+    color: white;
 }
 
 .descriptionText{
     margin-left: 10%;
+    font-size: small;
+    color: white;
+}
+
+.descriptionPref{
+    font-size: xx-large;
+    color: white;
 }
 
 .FinishJoin p{
@@ -278,11 +298,11 @@ body {
 .confirmationList{
     background-color: #912338;
     color: white;
-    height: 40vh;
-    width: 75vh;
+    height: 30vh;
+    width: 35vh;
     display: flex;
     border-radius: 16px;
-    justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
     flex-flow: column;
     font-size: 20px;
