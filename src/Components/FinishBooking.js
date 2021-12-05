@@ -6,13 +6,17 @@ class FinishBooking extends React.Component {
 
     constructor(props) {
         super();
-        console.log(props.location.state)
         this.state = {
             ...props.location.state
         }
 
     }
     render() {
+
+        //let timeFix = this.state.time;
+        //console.log(timeFix);
+        //timeFix = timeFix.replaceAll("00",":00");
+        //console.log(timeFix);
 
         return (
             <div className="FinishBooking">
