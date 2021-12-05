@@ -159,8 +159,7 @@ class SearchResults extends React.Component {
                 </div>
                 <div>
                     <Link to="/">
-                        <button className="buttons"
-                                onClick={this.handleJoin}>
+                        <button className="buttons">
                             Return
                         </button>
                     </Link>
