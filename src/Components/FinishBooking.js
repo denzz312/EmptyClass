@@ -4,18 +4,15 @@ class FinishBooking extends React.Component{
 
     constructor(props) {
         super();
-        console.log(props.joinObj);
-        this.state = {
-            ...props.joinObj
-        }
+        console.log(props.location.state)
+
     }
     render(){
     
     return(
         <div>
-            {this.state.subject}
-            {this.state.room}
-            {this.state.note}
+            {this.state}
+
         </div>
         
     );
