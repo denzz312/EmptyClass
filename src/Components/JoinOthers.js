@@ -59,7 +59,7 @@ class JoinOthers extends React.Component {
                     if (!this.state.showJoinNow) {
                         return (
                             <div>
-                                <div className="formDivider">
+                                <div className="formDivider2">
                                     <table className="table">
                                         <thead>
                                         <tr>

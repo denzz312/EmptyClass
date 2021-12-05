@@ -76,6 +76,19 @@ body {
     border-radius: 4px;
     justify-content: space-evenly;
     flex-direction: column;
+
+}
+
+.formDivider2 {
+    background-color: #912338;
+    height: 40vh;
+    width: 100vh;
+    display: flex;
+    margin: 10px;
+    box-shadow: 5px 5px #ececd8;
+    border-radius: 4px;
+    justify-content: space-evenly;
+    flex-direction: column;
     overflow: scroll;
     flex-flow: column;
 

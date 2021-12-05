@@ -6,7 +6,7 @@ class Footer extends React.Component{
     
     return(
         <footer className="App-footer">
-            Home
+            
         </footer>
         
     );
