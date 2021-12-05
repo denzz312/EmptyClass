@@ -18,40 +18,40 @@ class JoinOthers extends React.Component {
 
         let data = [{
             "subject": "SOEN 357",
-            "room": "balabala",
-            "note": "bababa",
+            "room": "629, Hall Building",
+            "note": "Feel free to join!",
         }, {
-            "subject": "SOEN 357",
-            "room": "balabala",
-            "note": "bababa",
+            "subject": "COEN 377",
+            "room": "521, Hall Building",
+            "note": "Study whatever you want..",
         }, {
-            "subject": "SOEN 357",
-            "room": "balabala",
-            "note": "bababa",
+            "subject": "ENGR 233",
+            "room": "675, Hall Building",
+            "note": "Feel free to join!",
         }, {
-            "subject": "SOEN 357",
-            "room": "balabala",
-            "note": "bababa",
+            "subject": "ENGR 390",
+            "room": "850, Hall Building",
+            "note": "Be quiet please, in zoom lecture",
         }, {
-            "subject": "SOEN 357",
-            "room": "balabala",
-            "note": "bababa",
+            "subject": "SOEN 352",
+            "room": "665, Hall Building",
+            "note": "Be quiet please, in zoom lecture",
         }, {
-            "subject": "SOEN 357",
-            "room": "balabala",
-            "note": "bababa",
+            "subject": "ENGR 301",
+            "room": "921, Hall Building",
+            "note": "Study whatever you want..",
         }, {
-            "subject": "SOEN 357",
-            "room": "balabala",
-            "note": "bababa",
+            "subject": "SOEN 470",
+            "room": "970, Hall Building",
+            "note": "Feel free to join!",
         }, {
-            "subject": "SOEN 357",
-            "room": "balabala",
-            "note": "bababa",
+            "subject": "COEN 210",
+            "room": "417, Hall Building",
+            "note": "Study whatever you want..",
         }, {
-            "subject": "SOEN 357",
-            "room": "balabala",
-            "note": "bababa",
+            "subject": "SOEN 335",
+            "room": "740, Hall Building",
+            "note": "Feel free to join!",
         }];
         return (
             <div className="joinOther">
@@ -63,10 +63,10 @@ class JoinOthers extends React.Component {
                                     <table className="table">
                                         <thead>
                                         <tr>
-                                            <th> 123</th>
-                                            <th> 123</th>
-                                            <th> 123</th>
-                                            <th> 123</th>
+                                            <th> Course Title</th>
+                                            <th> Room/Building</th>
+                                            <th> Note</th>
+                                            <th> Join Here</th>
                                         </tr>
                                         </thead>
 
@@ -98,6 +98,7 @@ class JoinOthers extends React.Component {
 
 
                                 </div>
+                                <br/>
                                 <div><Link to="/">
                                     <button className="buttons"
                                             onClick={this.handleJoin}>

@@ -124,13 +124,13 @@ class SearchResults extends React.Component {
                     </div>
 
                 </div>
-                <div className="searchResultsTable">
+                <div className="formDivider2">
                     <table className="table">
                         <thead>
                         <tr>
                             <th>Room #</th>
                             <th>Building Details</th>
-                            <th>Selection</th>
+                            <th>Join Here</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -155,6 +155,7 @@ class SearchResults extends React.Component {
                         </tbody>
                     </table>
                 </div>
+                <br/>
                 <div>
                     <Link to="/">
                         <button className="buttons">

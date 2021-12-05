@@ -69,7 +69,7 @@ body {
 .formDivider {
     background-color: #912338;
     height: 40vh;
-    width: 100vh;
+    width: 80vh;
     display: flex;
     margin: 10px;
     box-shadow: 5px 5px #ececd8;
@@ -81,16 +81,14 @@ body {
 
 .formDivider2 {
     background-color: #912338;
-    height: 40vh;
+    height: 45vh;
     width: 100vh;
     display: flex;
-    margin: 10px;
     box-shadow: 5px 5px #ececd8;
     border-radius: 4px;
     justify-content: space-evenly;
     flex-direction: column;
     overflow: scroll;
-    flex-flow: column;
 
 }
 
@@ -168,7 +166,7 @@ body {
 }
 
 .joinOther .table, .joinOther .table tr, .joinOther .table th , .joinOther .table td{
-    border: 1px solid white;
+    border: 1px solid black;
     padding: 10px;
     border-collapse: collapse;
 }
@@ -199,14 +197,16 @@ body {
     margin: 10px;
     border-radius: 4px;
     justify-content: space-evenly;
+    box-shadow: 5px 5px #ececd8;
     flex-direction: column;
     flex-flow: column;
     overflow:scroll;
 }
 
 .searchResults .table{
-    color: black;
-    background-color: #912338;
+    margin-top: 150px;
+    padding: 100px;
+    color: white;
 }
 
 .searchResults .table, .searchResults .table tr, .searchResults .table th, .searchResults .table td{
